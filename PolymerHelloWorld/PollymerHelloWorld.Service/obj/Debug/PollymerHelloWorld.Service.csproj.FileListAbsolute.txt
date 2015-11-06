@@ -1,0 +1,13 @@
+D:\GitHub\Polymer\PolymerHelloWorld\PollymerHelloWorld.Service\bin\Debug\PollymerHelloWorld.Service.exe.config
+D:\GitHub\Polymer\PolymerHelloWorld\PollymerHelloWorld.Service\bin\Debug\PollymerHelloWorld.Service.exe
+D:\GitHub\Polymer\PolymerHelloWorld\PollymerHelloWorld.Service\bin\Debug\PollymerHelloWorld.Service.pdb
+D:\GitHub\Polymer\PolymerHelloWorld\PollymerHelloWorld.Service\bin\Debug\Faker.NET4.dll
+D:\GitHub\Polymer\PolymerHelloWorld\PollymerHelloWorld.Service\bin\Debug\Nancy.dll
+D:\GitHub\Polymer\PolymerHelloWorld\PollymerHelloWorld.Service\bin\Debug\Nancy.Hosting.Self.dll
+D:\GitHub\Polymer\PolymerHelloWorld\PollymerHelloWorld.Service\bin\Debug\Topshelf.dll
+D:\GitHub\Polymer\PolymerHelloWorld\PollymerHelloWorld.Service\bin\Debug\Nancy.xml
+D:\GitHub\Polymer\PolymerHelloWorld\PollymerHelloWorld.Service\bin\Debug\Nancy.Hosting.Self.xml
+D:\GitHub\Polymer\PolymerHelloWorld\PollymerHelloWorld.Service\bin\Debug\de-DE\Faker.NET4.resources.dll
+D:\GitHub\Polymer\PolymerHelloWorld\PollymerHelloWorld.Service\obj\Debug\PollymerHelloWorld.Service.csprojResolveAssemblyReference.cache
+D:\GitHub\Polymer\PolymerHelloWorld\PollymerHelloWorld.Service\obj\Debug\PollymerHelloWorld.Service.exe
+D:\GitHub\Polymer\PolymerHelloWorld\PollymerHelloWorld.Service\obj\Debug\PollymerHelloWorld.Service.pdb
