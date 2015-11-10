@@ -1,0 +1,33 @@
+﻿<link rel="import" href="../lib/polymer/polymer-mini.html" />
+<link rel="import" href="../lib/paper-material/paper-material.html" />
+<link rel="import" href="../lib/paper-checkbox/paper-checkbox.html" />
+
+<dom-module id="user-item">
+
+    <template>
+        <Style>
+            paper-material {
+                margin-bottom: 8px;
+                padding: 8px
+            }
+        </Style>
+        <paper-material elevation="0">
+            <paper-checkbox></paper-checkbox>
+            <span>{{name}} {{surname}} ID ({{id}})</span>
+        </paper-material>
+
+    </template>
+
+    <script>
+        Polymer({
+            is: 'user-item',
+            properties: {
+                isChecked: { type: Boolean },
+                name: { type: String },
+                surname: { type: String },
+                id: { type: Number }
+            }
+        });
+    </script>
+
+</dom-module>

@@ -1,10 +1,57 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <title></title>
+    <!--<meta charset="utf-8" />-->
+    <title>PolymerHelloWorld</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Imports polyfill -->
+    <script src="lib/webcomponentsjs/webcomponents.min.js"></script>
+    <link rel="import" href="lib/paper-drawer-panel/paper-drawer-panel.html" />
+    <link rel="import" href="lib/paper-header-panel/paper-header-panel.html" />
+    <link rel="import" href="lib/paper-toolbar/paper-toolbar.html" />
+    <link rel="import" href="lib/paper-card/paper-card.html" />
+    <link rel="import" href="lib/paper-button/paper-button.html" />
+    <link rel="import" href="lib/iron-flex-layout/classes/iron-flex-layout.html" />
+
+    <!-- Imports custom element -->
+    <link rel="import" href="WebComponents/HelloWorld.html">
+    <link rel="import" href="WebComponents/UsersList.html" />
+
+    <link rel="stylesheet" href="css/Main.css" />
 </head>
 <body>
-    <h1>Hello in Polymers world!</h1>
+
+
+
+    <paper-drawer-panel class="flex">
+
+
+
+        <paper-header-panel drawer>
+            <paper-toolbar>
+                <div>Application!</div>
+            </paper-toolbar>
+            <users-list flex></users-list>
+        </paper-header-panel>
+
+
+        <paper-scroll-header-panel main condenses keep-condensed-header>
+
+            <paper-card heading="Main content" class="self-center">
+                <div class="card-content">
+                    <hello-world></hello-world>
+                </div>
+                <div class="card-actions">
+                    <paper-button>Some action</paper-button>
+                </div>
+            </paper-card>
+
+        </paper-scroll-header-panel>
+    </paper-drawer-panel>
+
 </body>
 </html>

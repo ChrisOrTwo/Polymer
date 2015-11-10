@@ -1,0 +1,21 @@
+﻿<link rel="import" href="../lib/polymer/polymer-mini.html"/>
+<link rel="import" href="../lib/iron-ajax/iron-ajax.html"/>
+<link rel="import" href="UserItem.html"/>
+
+<dom-module id="users-list">
+
+    <template is="dom-bind">
+        <p>This is list of the users:</p>
+        <template is="dom-repeat" items="{{data}}">
+            <user-item name="{{item.name}}" surname="{{item.surname}}" id="{{item.id}}"/>
+        </template>
+        <iron-ajax auto url="http://localhost:8989/nancy/Users" handle-as="json" last-response="{{data}}"></iron-ajax>
+    </template>
+
+    <script>
+        Polymer({
+            is: 'users-list'
+        });
+    </script>
+
+</dom-module>
