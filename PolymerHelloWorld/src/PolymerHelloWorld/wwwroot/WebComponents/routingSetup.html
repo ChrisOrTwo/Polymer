@@ -1,0 +1,27 @@
+﻿<script src="../lib/page.js/page.js"></script>
+<script>
+  window.addEventListener('WebComponentsReady', function() {
+
+    page('/', function() {
+      app.route = 'home';
+    });
+
+    page('/layoutDemo', function() {
+      app.route = 'layoutDemo';
+    });
+
+    page('/users', function() {
+      app.route = 'users';
+    });
+
+    page('/ajax', function() {
+      app.route = 'ajax';
+    });
+
+    // add #! before urls
+    page({
+      hashbang: true
+    });
+
+  });
+</script>

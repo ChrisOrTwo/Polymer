@@ -1,0 +1,84 @@
+﻿<dom-module id="layout-demo">
+
+    <Template>
+        <Style>
+            div.demo-item {
+                padding: 5px;
+                margin: 5px;
+                background: lightcoral;
+            }
+
+            div.demo-container {
+                height: 300px;
+                width: 500px;
+                background: lightgrey;
+            }
+        </Style>
+
+        <paper-card heading="Layout control examples:">
+            <div class="card-content flex">
+                <h3>horizontal layout:</h3>
+                <div class="demo-container flex horizontal layout" style="">
+                    <div class="demo-item self-start">self-start</div>
+                    <div class="demo-item self-center">self-center</div>
+                    <div class="demo-item self-end">self-end</div>
+                    <div class="demo-item self-stretch">self-stretch</div>
+                </div>
+            </div>
+            <div class="card-content flex">
+                <h3>horizontal center-justified layout:</h3>
+                <div class="demo-container flex horizontal center-justified layout">
+                    <div class="demo-item flex">flex</div>
+                    <div class="demo-item flex">flex</div>
+                    <div class="demo-item flex">flex</div>
+                    <div class="demo-item flex">flex</div>
+                </div>
+            </div>
+            <div class="card-content flex">
+                <h3>horizontal center-justified layout:</h3>
+                <div class="demo-container flex horizontal center-justified layout">
+                    <div class="demo-item ">non-flex</div>
+                    <div class="demo-item ">non-flex</div>
+                    <div class="demo-item ">non-flex</div>
+                    <div class="demo-item ">non-flex</div>
+                </div>
+            </div>
+
+            <div class="card-content flex">
+                <h3>vertical layout:</h3>
+                <div class="demo-container flex vertical layout" style="">
+                    <div class="demo-item self-start">self-start</div>
+                    <div class="demo-item self-center">self-center</div>
+                    <div class="demo-item self-end">self-end</div>
+                    <div class="demo-item self-stretch">self-stretch</div>
+                </div>
+            </div>
+            <div class="card-content flex">
+                <h3>vertical center-justified layout:</h3>
+                <div class="demo-container flex vertical center-justified layout">
+                    <div class="demo-item flex">flex</div>
+                    <div class="demo-item flex">flex</div>
+                    <div class="demo-item flex">flex</div>
+                    <div class="demo-item flex">flex</div>
+                </div>
+            </div>
+            <div class="card-content flex">
+                <h3>vertical center-justified layout:</h3>
+                <div class="demo-container flex vertical center-justified layout">
+                    <div class="demo-item ">non-flex</div>
+                    <div class="demo-item ">non-flex</div>
+                    <div class="demo-item ">non-flex</div>
+                    <div class="demo-item ">non-flex</div>
+                </div>
+            </div>
+
+        </paper-card>
+    </Template>
+
+    <script>
+        Polymer({
+            is: 'layout-demo'
+        });
+    </script>
+
+</dom-module>

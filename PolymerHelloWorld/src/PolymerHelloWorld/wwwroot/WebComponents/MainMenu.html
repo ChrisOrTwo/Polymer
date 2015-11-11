@@ -1,0 +1,40 @@
+﻿<link rel="import" href="../lib/paper-menu/paper-menu.html" />
+<link rel="import" href="../lib/paper-item/paper-icon-item.html" />
+<link rel="import" href="../lib/iron-icon/iron-icon.html" />
+<link rel="import" href="../lib/iron-icons/iron-icons.html" />
+
+<dom-module id="main-menu">
+
+    <Template>
+        <paper-menu aria-selected="{{selected}}">
+            <a data-route="home" href="/">
+                <paper-icon-item href="">
+                    <iron-icon icon="favorite" item-icon></iron-icon>
+                    Home
+                </paper-icon-item>
+            </a>
+            <a data-route="layoutDemo" href="/layoutDemo">
+                <paper-icon-item>
+                    <iron-icon icon="favorite" item-icon></iron-icon>
+                    Layout Demo
+                </paper-icon-item>
+            </a>
+            <a data-route="Ajax" href="/ajax">
+                <paper-icon-item>
+                    <iron-icon icon="favorite" item-icon></iron-icon>
+                    Ajax
+                </paper-icon-item>
+            </a>
+        </paper-menu>
+    </Template>
+
+    <script>
+        Polymer({
+            is: 'main-menu',
+            properties: {
+                selected: { type: Object }
+            }
+        });
+    </script>
+
+</dom-module>
